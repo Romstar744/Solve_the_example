@@ -122,13 +122,14 @@ class MainActivity : AppCompatActivity() {
         }
         if (result == pollResult.toDouble()){
             right++
-            binding.primerlayout.setBackgroundColor(ContextCompat.getColor(this, R.color.green))
+            binding.vvod.setBackgroundColor(ContextCompat.getColor(this, R.color.green))
         }
         else {
             lose++
-            binding.primerlayout.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
+            binding.vvod.setBackgroundColor(ContextCompat.getColor(this, R.color.red))
         }
         all++
+
 
         val present = String.format("%.2f%%", (right.toDouble() / all.toDouble()) * 100)
 
