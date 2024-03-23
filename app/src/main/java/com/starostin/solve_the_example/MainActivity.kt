@@ -92,10 +92,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun generatePrimer(){
+        binding.primerlayout.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
+
         binding.nullNull1.text = generateRandomOperand().toString()
         binding.nullNull2.text = generateRandomOperand().toString()
         binding.znak.text = generateRandomOperator().toString()
     }
+
 
     private fun checkPrimer(){
         val numberOne = binding.nullNull1.text.toString().toDouble()
